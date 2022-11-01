@@ -1,6 +1,6 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import { TwitterIcon, InstagramIcon, GitHubIcon } from './Icons';
+import React from "react";
+import { useRouter } from "next/router";
+import { TwitterIcon, InstagramIcon, GitHubIcon } from "./Icons";
 
 const Footer = () => {
   const router = useRouter();
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="bg-primary-2 border border-line-1 rounded-b-lg">
       <div className="flex flex-row justify-between w-full">
         <ul className="flex">
-          <li className="px-8 py-4 flex items-center border-r border-line-1 text-secondary-1">
+          <li className="px-8 py-4 flex items-center border-r border-line-1 font-firacode text-secondary-1">
             find me in:
           </li>
           <li className="border-r border-line-1">
@@ -34,7 +34,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="flex">
-          <li className="border-l border-line-1 text-secondary-1 hover:text-white">
+          <li className="border-l border-line-1 font-firacode text-secondary-1 hover:text-white">
             <a
               className="p-5 flex items-center group transition-colors duration-300 ease-in-out"
               href="https://github.com/nomanejaz132"

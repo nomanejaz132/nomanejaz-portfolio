@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .code-snippets {
+    background-image: url(../public/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
