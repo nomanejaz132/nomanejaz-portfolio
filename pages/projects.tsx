@@ -1,3 +1,3 @@
 export default function Projects() {
-  return <div>Projects</div>;
+  return <div className="border-x border-line-1 bg-primary-2">Projects</div>;
 }

@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex flex-row justify-between w-full">
           <ul className="flex">
             <li
-              className={`border-r border-line-1 ${
+              className={`border-r border-line-1 transition-colors duration-700 ease-in-out ${
                 router.asPath === '/'
                   ? 'text-white border-b border-b-accent-1'
                   : 'text-secondary-1'
@@ -32,7 +32,7 @@ const Header = () => {
               </Link>
             </li>
             <li
-              className={`border-r border-line-1 ${
+              className={`border-r border-line-1 transition-colors duration-700 ease-in-out ${
                 router.asPath === '/about'
                   ? 'text-white border-b border-b-accent-1'
                   : 'text-secondary-1'
@@ -43,7 +43,7 @@ const Header = () => {
               </Link>
             </li>
             <li
-              className={`border-r border-line-1 ${
+              className={`border-r border-line-1 transition-colors duration-700 ease-in-out ${
                 router.asPath === '/projects'
                   ? 'text-white border-b border-b-accent-1'
                   : 'text-secondary-1'
@@ -56,7 +56,7 @@ const Header = () => {
           </ul>
           <ul className="flex">
             <li
-              className={`border-l border-line-1 text-secondary-1 ${
+              className={`border-l border-line-1 text-secondary-1 transition-colors duration-700 ease-in-out ${
                 router.asPath === '/contact'
                   ? 'text-white border-b border-b-accent-1'
                   : 'text-secondary-1'
