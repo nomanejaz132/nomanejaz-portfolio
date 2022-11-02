@@ -56,30 +56,6 @@
     /* -webkit-transform: translateY(-27.5%);
     transform: translateY(-28.5%); */
   }
-  @media screen and (max-width: 1360px) {
-    .creatives[data-creative] {
-      -webkit-transform: unset;
-      transform: unset;
-    }
-  }
-  @media screen and (max-width: 960px) {
-    .creatives[data-creative] {
-      width: 100%;
-    }
-    .creatives > div[data-creative] {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .creatives[data-creative] {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      height: 480px;
-    }
-    .creatives > div[data-creative] {
-      height: 480px;
-    }
-  }
   .creative-card[data-creative-card] {
     display: -webkit-box;
     display: -ms-flexbox;
