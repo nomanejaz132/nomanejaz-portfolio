@@ -1,12 +1,12 @@
-import React from "react";
-import { useRouter } from "next/router";
-import { TwitterIcon, InstagramIcon, GitHubIcon } from "./Icons";
+import React from 'react';
+import { useRouter } from 'next/router';
+import { TwitterIcon, InstagramIcon, GitHubIcon } from './Icons';
 
 const Footer = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-primary-2 border border-line-1 rounded-b-lg">
+    <div className="bg-primary-2 border border-line-1 rounded-b-lg fixed bottom-0">
       <div className="flex flex-row justify-between w-full">
         <ul className="flex">
           <li className="px-8 py-4 flex items-center border-r border-line-1 font-firacode text-secondary-1">

@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-primary-2 border border-line-1 rounded-t-lg">
+    <div className="bg-primary-2 border border-line-1 rounded-t-lg fixed">
       <div className="w-full flex flex-row items-center">
         <ul>
           <li className="w-64 border-r border-line-1">
@@ -22,9 +22,9 @@ const Header = () => {
           <ul className="flex">
             <li
               className={`border-r border-line-1 font-firacode transition-colors duration-700 ease-in-out ${
-                router.asPath === "/"
-                  ? "text-white border-b border-b-accent-1"
-                  : "text-secondary-1"
+                router.asPath === '/'
+                  ? 'text-white border-b border-b-accent-1'
+                  : 'text-secondary-1'
               }`}
             >
               <Link className="px-8 py-4 flex items-center" href="/">
@@ -33,9 +33,9 @@ const Header = () => {
             </li>
             <li
               className={`border-r border-line-1 font-firacode transition-colors duration-700 ease-in-out ${
-                router.asPath === "/about"
-                  ? "text-white border-b border-b-accent-1"
-                  : "text-secondary-1"
+                router.asPath === '/about'
+                  ? 'text-white border-b border-b-accent-1'
+                  : 'text-secondary-1'
               }`}
             >
               <Link className="px-8 py-4 flex items-center" href="/about">
@@ -44,9 +44,9 @@ const Header = () => {
             </li>
             <li
               className={`border-r border-line-1 font-firacode transition-colors duration-700 ease-in-out ${
-                router.asPath === "/projects"
-                  ? "text-white border-b border-b-accent-1"
-                  : "text-secondary-1"
+                router.asPath === '/projects'
+                  ? 'text-white border-b border-b-accent-1'
+                  : 'text-secondary-1'
               }`}
             >
               <Link className="px-8 py-4 flex items-center" href="/projects">
@@ -57,9 +57,9 @@ const Header = () => {
           <ul className="flex">
             <li
               className={`border-l border-line-1 font-firacode text-secondary-1 transition-colors duration-700 ease-in-out ${
-                router.asPath === "/contact"
-                  ? "text-white border-b border-b-accent-1"
-                  : "text-secondary-1"
+                router.asPath === '/contact'
+                  ? 'text-white border-b border-b-accent-1'
+                  : 'text-secondary-1'
               }`}
             >
               <Link className="px-8 py-4 flex items-center" href="/contact">
