@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -95,14 +95,14 @@
     -ms-flex-direction: row;
     flex-direction: row;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     border-radius: 1.5rem;
     animation: scroll-creative-card-data-creative-card
       calc(var(--delay-unit) * 5) linear infinite reverse;
   }
   .creative-card[data-creative-card]::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -1px;
     top: -1px;
@@ -112,7 +112,7 @@
     z-index: -1;
   }
   .creative-card[data-creative-card]::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
