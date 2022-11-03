@@ -1,5 +1,5 @@
-import Image from "next/image";
-import CodeSnippet from "../public/code-snippet.png";
+import Image from 'next/image';
+import CodeSnippet from '../public/code-snippet.png';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
               Noman Ejaz
             </h1>
             <p className="text-gradients-1 md:text-2xl lg:text-3xl font-firacode font-medium leading-normal">
-              {">"} Frontend Engineer
+              {'>'} Frontend Engineer
             </p>
           </div>
           <div

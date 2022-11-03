@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -42,7 +42,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    background-image: url(../public/hero-bg.svg);
+    background-image: url(/hero-bg.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -78,7 +78,7 @@
       calc(var(--delay-unit) * 5) linear infinite reverse;
   }
   .creative-card[data-creative-card]::after {
-    content: "";
+    content: '';
     position: absolute;
     left: -1px;
     top: -1px;
@@ -88,7 +88,7 @@
     z-index: -1;
   }
   .creative-card[data-creative-card]::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
