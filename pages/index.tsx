@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex justify-between items-center h-full">
           <div>
             <span className="text-secondary-5 text-lg font-firacode font-normal leading-6">
-              Hi all. I am
+              Hi all. I'm
             </span>
             <h1 className="text-secondary-5 md:text-5xl lg:text-6xl font-firacode font-normal md:leading-normal lg:leading-[80px]">
               Noman Ejaz
