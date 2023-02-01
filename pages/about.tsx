@@ -1,9 +1,11 @@
-export default function About() {
+import Sidebar from "../components/Sidebar";
+
+const About = () => {
   return (
-    <div className="border-x border-line-1 bg-primary-2 h-screen">
-      <div className="h-full flex items-center justify-center text-white text-3xl">
-        This page is still in progress.
-      </div>
+    <div className="border-x border-line-1 bg-primary-2 h-screen pt-[60px] pb-[68px]">
+      <Sidebar />
     </div>
   );
-}
+};
+
+export default About;
