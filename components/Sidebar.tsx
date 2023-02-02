@@ -17,7 +17,9 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div>sidebar</div>
+      <div className="w-[239px] h-[calc(100vh-128px)] p-3 border-r border-[#1E2D3D]">
+        sidebar
+      </div>
     </div>
   );
 };

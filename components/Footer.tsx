@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="bg-primary-2 border border-line-1 rounded-b-lg fixed bottom-0 w-full">
       <div className="flex flex-row justify-between w-full">
         <ul className="flex">
-          <li className="md:px-4 md:py-2 lg:px-8 lg:py-4 flex items-center border-r border-line-1 md:text-sm lg:text-base font-firacode text-secondary-1">
+          <li className="w-[180px] md:px-4 lg:px-8  md:py-2 lg:py-4 flex items-center border-r border-line-1 md:text-sm lg:text-base font-firacode text-secondary-1">
             find me in:
           </li>
           <li className="border-r border-line-1">

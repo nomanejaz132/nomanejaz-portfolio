@@ -9,7 +9,7 @@ const Header = () => {
     <div className="bg-primary-2 border border-line-1 rounded-t-lg fixed w-full">
       <div className="w-full flex flex-row items-center">
         <ul>
-          <li className="md:w-36 lg:w-64 border-r border-line-1">
+          <li className="md:w-36 lg:w-[312px] border-r border-line-1">
             <Link
               href="/"
               className="md:pl-3 md:py-2 lg:pl-6 lg:py-4 flex items-center md:text-sm lg:text-base text-secondary-1 font-firacode"
