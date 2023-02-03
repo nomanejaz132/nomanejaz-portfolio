@@ -103,3 +103,23 @@ export function HobbiesIcon() {
     </svg>
   );
 }
+
+export function ChevronIcon({ state }: any) {
+  return (
+    <svg
+      width="7"
+      height="9"
+      viewBox="0 0 7 9"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`${
+        state ? "rotate-90 transition-transform" : "transition-transform"
+      }`}
+    >
+      <path
+        d="M6.75 4.25002L0.75 8.50003L0.75 -2.62268e-07L6.75 4.25002Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
