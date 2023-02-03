@@ -1,5 +1,11 @@
 import React from "react";
-import { HobbiesIcon, PersonalInfoIcon, ProfessionalInfoIcon } from "./Icons";
+import {
+  EmailIcon,
+  HobbiesIcon,
+  PersonalInfoIcon,
+  PhoneIcon,
+  ProfessionalInfoIcon,
+} from "./Icons";
 import SibebarDropdown from "./SibebarDropdown";
 
 const Sidebar = () => {
@@ -19,7 +25,28 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="w-[239px] h-[calc(100vh-128px)] border-r border-[#1E2D3D]">
-        <SibebarDropdown />
+        <SibebarDropdown title="personal-info">
+          <div>personal something</div>
+        </SibebarDropdown>
+        <SibebarDropdown title="contacts">
+          <div className="flex flex-col gap-3">
+            <a
+              className="flex items-center gap-2"
+              href="mailto:hi@nomanejaz.dev"
+            >
+              <EmailIcon />
+              <p className="text-[#607B96] text-base font-firacode leading-5">
+                hi@nomanejaz.dev
+              </p>
+            </a>
+            <a className="flex items-center gap-2" href="tel:+923049705035">
+              <PhoneIcon />
+              <p className="text-[#607B96] text-base font-firacode leading-5">
+                +923049705035
+              </p>
+            </a>
+          </div>
+        </SibebarDropdown>
       </div>
     </div>
   );

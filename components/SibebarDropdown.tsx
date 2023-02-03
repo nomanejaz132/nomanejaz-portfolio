@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChevronIcon } from "./Icons";
 
-const SibebarDropdown = () => {
+const SibebarDropdown = ({ title, children }: any) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -11,13 +11,11 @@ const SibebarDropdown = () => {
         onClick={() => setOpen(!open)}
       >
         <ChevronIcon state={open} />
-        <p className="text-white text-base font-firacode leading-5">
-          personal-info
-        </p>
+        <p className="text-white text-base font-firacode leading-5">{title}</p>
       </div>
       {open && (
         <div className="p-4 text-white border-b border-[#1E2D3D] transition duration-500  ease-in-out">
-          bio
+          {children}
         </div>
       )}
     </div>
