@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronIcon } from "./Icons";
+import { ChevronSolidIcon } from "./Icons";
 
 const SibebarDropdown = ({ title, children }: any) => {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,7 @@ const SibebarDropdown = ({ title, children }: any) => {
         className="flex items-center gap-3 px-4 py-3 border-b border-[#1E2D3D] cursor-pointer"
         onClick={() => setOpen(!open)}
       >
-        <ChevronIcon state={open} />
+        <ChevronSolidIcon state={open} />
         <p className="text-white text-base font-firacode leading-5">{title}</p>
       </div>
       {open && (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HobbiesIcon, PersonalInfoIcon, ProfessionalInfoIcon } from "./Icons";
 import SibebarDropdown from "./SibebarDropdown";
 import ContactDropdown from "./ContactDropdown";
+import PersonalInfoDropdown from "./PersonalInfoDropdown";
 
 const Sidebar = () => {
   const [tab, setTab] = useState(false);
@@ -21,9 +22,7 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="w-[239px] h-[calc(100vh-128px)] border-r border-[#1E2D3D]">
-        <SibebarDropdown title="personal-info">
-          <div>personal something</div>
-        </SibebarDropdown>
+        <PersonalInfoDropdown />
         <ContactDropdown />
       </div>
     </div>
