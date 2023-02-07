@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import {
-  EmailIcon,
-  HobbiesIcon,
-  PersonalInfoIcon,
-  PhoneIcon,
-  ProfessionalInfoIcon,
-} from "./Icons";
+import { HobbiesIcon, PersonalInfoIcon, ProfessionalInfoIcon } from "./Icons";
 import SibebarDropdown from "./SibebarDropdown";
+import ContactDropdown from "./ContactDropdown";
 
 const Sidebar = () => {
   const [tab, setTab] = useState(false);
@@ -29,28 +24,7 @@ const Sidebar = () => {
         <SibebarDropdown title="personal-info">
           <div>personal something</div>
         </SibebarDropdown>
-        <SibebarDropdown title="contacts">
-          <div className="flex flex-col gap-3">
-            <a
-              className="group flex items-center gap-2"
-              href="mailto:hi@nomanejaz.dev"
-            >
-              <EmailIcon />
-              <p className="text-[#607B96] text-base font-firacode leading-5 group-hover:text-white transition-colors duration-400 ease-in-out">
-                hi@nomanejaz.dev
-              </p>
-            </a>
-            <a
-              className="group flex items-center gap-2"
-              href="tel:+923049705035"
-            >
-              <PhoneIcon />
-              <p className="text-[#607B96] text-base font-firacode leading-5 group-hover:text-white transition-colors duration-400 ease-in-out">
-                +923049705035
-              </p>
-            </a>
-          </div>
-        </SibebarDropdown>
+        <ContactDropdown />
       </div>
     </div>
   );
