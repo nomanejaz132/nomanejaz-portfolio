@@ -50,7 +50,7 @@ export function InstagramIcon() {
   );
 }
 
-export function ProfessionalInfoIcon() {
+export function ProfessionalInfoIcon({ active }: any) {
   return (
     <svg
       width="24"
@@ -58,7 +58,9 @@ export function ProfessionalInfoIcon() {
       viewBox="0 0 24 24"
       // fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-[#273E53] group-hover:fill-[#607B96]"
+      className={`${
+        active === 1 ? "fill-[#607B96]" : "fill-[#273E53]"
+      } group-hover:fill-[#607B96]`}
     >
       <path
         d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3V3ZM12 15V17H18V15H12ZM8.414 12L5.586 14.828L7 16.243L11.243 12L7 7.757L5.586 9.172L8.414 12Z"
@@ -68,7 +70,7 @@ export function ProfessionalInfoIcon() {
   );
 }
 
-export function PersonalInfoIcon() {
+export function PersonalInfoIcon({ active }: any) {
   return (
     <svg
       width="24"
@@ -76,7 +78,9 @@ export function PersonalInfoIcon() {
       viewBox="0 0 24 24"
       // fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-[#273E53] group-hover:fill-[#607B96]"
+      className={`${
+        active === 2 ? "fill-[#607B96]" : "fill-[#273E53]"
+      } group-hover:fill-[#607B96]`}
     >
       <path
         d="M5 20H19V22H5V20ZM12 18C9.87827 18 7.84344 17.1571 6.34315 15.6569C4.84285 14.1566 4 12.1217 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10C20 12.1217 19.1571 14.1566 17.6569 15.6569C16.1566 17.1571 14.1217 18 12 18V18Z"
@@ -86,7 +90,7 @@ export function PersonalInfoIcon() {
   );
 }
 
-export function HobbiesIcon() {
+export function HobbiesIcon({ active }: any) {
   return (
     <svg
       width="24"
@@ -94,7 +98,9 @@ export function HobbiesIcon() {
       viewBox="0 0 24 24"
       // fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-[#273E53] group-hover:fill-[#607B96]"
+      className={`${
+        active === 3 ? "fill-[#607B96]" : "fill-[#273E53]"
+      } group-hover:fill-[#607B96]`}
     >
       <path
         d="M17 4C18.5913 4 20.1174 4.63214 21.2426 5.75736C22.3679 6.88258 23 8.4087 23 10V14C23 15.5913 22.3679 17.1174 21.2426 18.2426C20.1174 19.3679 18.5913 20 17 20H7C5.4087 20 3.88258 19.3679 2.75736 18.2426C1.63214 17.1174 1 15.5913 1 14V10C1 8.4087 1.63214 6.88258 2.75736 5.75736C3.88258 4.63214 5.4087 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM18 13H16V15H18V13ZM16 9H14V11H16V9Z"

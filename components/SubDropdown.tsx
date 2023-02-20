@@ -6,7 +6,7 @@ const SubDropdown = ({ title, color, children }: any) => {
   return (
     <div className="flex flex-col">
       <div
-        className="flex items-center py-1 px-3 hover:bg-[#607B964D] cursor-pointer"
+        className="flex items-center gap-2 py-1 px-3 hover:bg-[#607B964D] cursor-pointer"
         onClick={() => setOpen(!open)}
       >
         <ChevronOutlinedIcon state={open} />
@@ -18,7 +18,7 @@ const SubDropdown = ({ title, color, children }: any) => {
         </a>
       </div>
       {open && (
-        <div className="flex flex-col gap-2 transition duration-500 ease-in-out">
+        <div className="flex flex-col transition duration-500 ease-in-out">
           {children}
         </div>
       )}
