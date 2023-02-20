@@ -14,7 +14,7 @@ const SibebarDropdown = ({ title, children }: any) => {
         <p className="text-white text-base font-firacode leading-5">{title}</p>
       </div>
       {open && (
-        <div className="p-4 text-white border-b border-[#1E2D3D] transition duration-500  ease-in-out">
+        <div className="py-4 text-white border-b border-[#1E2D3D] transition duration-500  ease-in-out">
           {children}
         </div>
       )}
