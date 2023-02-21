@@ -3,6 +3,7 @@ import { HobbiesIcon, PersonalInfoIcon, ProfessionalInfoIcon } from "./Icons";
 import SibebarDropdown from "./SibebarDropdown";
 import ContactDropdown from "./ContactDropdown";
 import PersonalInfoDropdown from "./PersonalInfoDropdown";
+import ProfessionalInfoDropdown from "./ProfessionalInfoDropdown";
 
 const Sidebar = () => {
   const [tab, setTab] = useState(1);
@@ -24,7 +25,7 @@ const Sidebar = () => {
       <div className="w-[239px] h-[calc(100vh-128px)] border-r border-[#1E2D3D]">
         {tab === 1 && (
           <>
-            <p className="text-white text-center">Tab 1 content</p>
+            <ProfessionalInfoDropdown />
           </>
         )}
         {tab === 2 && (
