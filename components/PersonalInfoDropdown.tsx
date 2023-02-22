@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import SibebarDropdown from "./SibebarDropdown";
-import SubDropdown from "./SubDropdown";
 import { FileIcon } from "./Icons";
 
 const PersonalInfoDropdown = () => {
