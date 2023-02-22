@@ -23,20 +23,6 @@ const PersonalInfoDropdown = () => {
             </p>
           </div>
         </SubDropdown>
-        <SubDropdown title="education" color="#3A49A4">
-          <div className="flex items-center gap-2.5 pl-9 p-1.5 cursor-pointer select-none hover:bg-[#607B964D]">
-            <FileIcon />
-            <p className="text-[#607B96] text-base font-firacode leading-5 group-hover:text-white transition-colors duration-400 ease-in-out">
-              high-school
-            </p>
-          </div>
-          <div className="flex items-center gap-2.5 pl-9 p-1.5 cursor-pointer select-none hover:bg-[#607B964D]">
-            <FileIcon />
-            <p className="text-[#607B96] text-base font-firacode leading-5 group-hover:text-white transition-colors duration-400 ease-in-out">
-              university
-            </p>
-          </div>
-        </SubDropdown>
       </div>
     </SibebarDropdown>
   );

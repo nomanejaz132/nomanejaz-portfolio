@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { ChevronSolidIcon } from "./Icons";
+import { ChevronOutlinedIcon, FolderIcon } from "./Icons";
 
-const SibebarDropdown = ({ title, children }: any) => {
+const SibebarDropdown = ({ title, color, children }: any) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="border-b border-[#1E2D3D] py-1">
       <div
-        className="flex items-center gap-3 px-4 py-3 border-b border-[#1E2D3D] cursor-pointer"
+        className="flex items-center gap-2 px-2.5 py-1 cursor-pointer"
         onClick={() => setOpen(!open)}
       >
-        <ChevronSolidIcon state={open} />
+        <ChevronOutlinedIcon state={open} />
+        <FolderIcon color="red" />
         <p className="text-white text-base font-firacode leading-5">{title}</p>
       </div>
       {open && (
-        <div className="text-white border-b border-[#1E2D3D] transition duration-500  ease-in-out">
+        <div className="text-white transition duration-500  ease-in-out">
           {children}
         </div>
       )}
