@@ -4,10 +4,10 @@ import { EmailIcon, PhoneIcon } from "./Icons";
 
 const ContactDropdown = () => {
   return (
-    <SibebarDropdown title="contacts">
+    <SibebarDropdown title="contacts" color="#3A49A4">
       <div className="flex flex-col">
         <a
-          className="group flex items-center gap-2 py-2 px-3 hover:bg-[#607B964D]"
+          className="group flex items-center gap-2 py-2 px-3 pl-9 hover:bg-[#607B964D]"
           href="mailto:hi@nomanejaz.dev"
         >
           <EmailIcon />
@@ -16,7 +16,7 @@ const ContactDropdown = () => {
           </p>
         </a>
         <a
-          className="group flex items-center gap-2 py-2 px-3 hover:bg-[#607B964D]"
+          className="group flex items-center gap-2 py-2 px-3 pl-9 hover:bg-[#607B964D]"
           href="tel:+923049705035"
         >
           <PhoneIcon />

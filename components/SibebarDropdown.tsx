@@ -11,7 +11,7 @@ const SibebarDropdown = ({ title, color, children }: any) => {
         onClick={() => setOpen(!open)}
       >
         <ChevronOutlinedIcon state={open} />
-        <FolderIcon color="red" />
+        <FolderIcon color={color} />
         <p className="text-white text-base font-firacode leading-5">{title}</p>
       </div>
       {open && (
